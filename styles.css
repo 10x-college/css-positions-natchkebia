@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    linear-gradient(160deg, rgba(83, 255, 238, 1), rgba(9, 137, 180, 0.0001)),
+    url("/images/Background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.card-top {
+  height: 140px;
+  background: url("/images/profile.card.png");
+  background-position: top;
+  position: relative;
+}
+
+.profile-image {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-content {
+  padding: 60px 20px 24px;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2e3349;
+}
+
+.user-age {
+  font-weight: 400;
+  color: #6b7082;
+}
+
+.user-location {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6b7082;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+  border-top: 1px solid #e8e9ec;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3349;
+}
+
+.stat-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #6b7082;
+}
